@@ -3,24 +3,21 @@ import { NumbersCollection } from './NumberCollection';
 import { CharactersCollection } from './CharactersCollection';
 import { LinkedList } from './LinekdList';
 
-// const numbersCollection = new NumbersCollection([10, 22, 3, -5, 0, -10]);
-// const sorter = new Sorter(numbersCollection)
-// sorter.sort()
-// console.log(numbersCollection)
+//Numbers collection bubble sort
+const numbersCollection = new NumbersCollection([10, 22, 3, -5, 0, -10]);
+numbersCollection.sort()
+console.log(numbersCollection.data)
 
-// const charactersCollection = new CharactersCollection ('yaaabKKXllcCAL19')
-// const sorter = new Sorter(charactersCollection)
-// sorter.sort()
-// console.log(charactersCollection.data);
+//Characters collection bubble sort 
+const charactersCollection = new CharactersCollection ('yaaabKKXllcCAL19')
+charactersCollection.sort()
+console.log(charactersCollection.data);
 
-
+//Linked list collection bubble sort
 const linkedList = new LinkedList();
-
 linkedList.add(500);
 linkedList.add(-10);
 linkedList.add(-3);
 linkedList.add(10);
-
-const sorter = new Sorter(linkedList);
-sorter.sort();
+linkedList.sort()
 linkedList.print();

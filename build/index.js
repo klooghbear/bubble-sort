@@ -1,15 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Sorter_1 = require("./Sorter");
+var NumberCollection_1 = require("./NumberCollection");
+var CharactersCollection_1 = require("./CharactersCollection");
 var LinekdList_1 = require("./LinekdList");
-// const numbersCollection = new NumbersCollection([10, 22, 3, -5, 0, -10]);
-// const charactersCollection = new CharactersCollection ('yaaabKKXllcCAL19')
+//Numbers collection bubble sort
+var numbersCollection = new NumberCollection_1.NumbersCollection([10, 22, 3, -5, 0, -10]);
+numbersCollection.sort();
+console.log(numbersCollection.data);
+//Characters collection bubble sort 
+var charactersCollection = new CharactersCollection_1.CharactersCollection('yaaabKKXllcCAL19');
+charactersCollection.sort();
+console.log(charactersCollection.data);
+//Linked list collection bubble sort
 var linkedList = new LinekdList_1.LinkedList();
 linkedList.add(500);
 linkedList.add(-10);
 linkedList.add(-3);
 linkedList.add(10);
-var sorter = new Sorter_1.Sorter(linkedList);
-sorter.sort();
-// console.log(charactersCollection.data);
+linkedList.sort();
 linkedList.print();
